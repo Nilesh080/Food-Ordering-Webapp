@@ -14,7 +14,8 @@ const RestaurantsMenu = () => {
   }, []);
 
   const fetchData = async () => {
-    const data = await fetch(MENU_URL + resId);
+    // const data = await fetch(MENU_URL + resId);
+    const data = await fetch("https://corsproxy.org/?"+encodeURIComponent(MENU_URL + resId));
     const json = await data.json();
     console.log(json);
     // console.log("i m here");
