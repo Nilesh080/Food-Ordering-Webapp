@@ -22,7 +22,7 @@ const Cart = () => {
         Clear Cart
       </button>}
       <div className="w-6/12 m-auto">
-        <ItemList item={cartItems} />
+        <ItemList item={cartItems} showAdd = {false} />
       </div>
     </div>
   );
